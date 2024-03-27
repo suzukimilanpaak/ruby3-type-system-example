@@ -29,3 +29,20 @@ target :lib do
   check 'lib'
 end
 ```
+
+## To get a blueprint of a signature of a class
+
+**typeprof** is a convenient command that infers types and prints the results. It's useful when you want to blueprint the signature of a module or class.
+
+```shell
+% typeprof lib/api_client.rb
+# TypeProf 0.21.11
+
+# Classes
+class ApiClient
+  HOST_NAME: String
+
+  def get_request: (untyped path) -> Hash[untyped, untyped]?
+  def undefined_request: (untyped path) -> nil
+end
+```
