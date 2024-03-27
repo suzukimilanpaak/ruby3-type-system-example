@@ -9,7 +9,12 @@ bundle install
 ## To verify types defined in signature files
 
 ```shell
-bundle exec steep check
+% bundle exec steep check
+# Type checking files:
+
+.......................................................................................................
+
+No type error detected. 🫖
 ```
 
 
