@@ -1,0 +1,7 @@
+# TypeProf 0.21.11
+
+class ApiClient
+  HOST_NAME: String
+
+  def get_request: (untyped path) -> Hash[Symbol, untyped]?
+end
